@@ -27,7 +27,7 @@ Terraform's `for` expression, meanwhile, is pretty much the same. A [`for` expre
 
 > ... creates a complex type value by transforming another complex type value. Each element in the input value can correspond to either one or zero values in the result, and an arbitrary expression can be used to transform each input element into an output element.
 
-#### Example 6: Transforming a list into another list
+#### Example 1: Transforming a list into another list
 
 Here is an example:
 
@@ -68,7 +68,7 @@ And for comparison, the same code in Python would be:
 
 Very pythonic.
 
-#### Example 7: Filtering a list
+#### Example 2: Filtering a list
 
 And again, as in Python, Terraform lists can also be filtered by adding an `if` in the `for` expression:
 
@@ -91,7 +91,7 @@ And for reference, in Python, that would be:
 [6, 7, 8, 9, 10]
 ```
 
-#### Example 8: Transforming a list into a map
+#### Example 3: Transforming a list into a map
 
 Map transformations in Terraform are also Pythonic. If I change my Terraform code to:
 
@@ -130,7 +130,7 @@ And again comparing this with Python:
 {'host3': 'HOST3', 'host2': 'HOST2', 'host1': 'HOST1'}
 ```
 
-#### Example 9: Transforming a map into a list
+#### Example 4: Transforming a map into a list
 
 To iterate over a map, Terraform provides a `keys()` and `values()` function, similar to corresponding methods in Python. Thus, this sort of thing is possible:
 
@@ -157,7 +157,7 @@ Which is to Terraform as this is to Python:
 [1, 2, 3]
 ```
 
-#### Example 10: A real life example
+#### Example 5: A real life example
 
 All of this is good and theoretical although the reader may want a real life example at this point. Here is one:
 
